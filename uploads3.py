@@ -4,11 +4,11 @@
 import sys
 
 try:
-        import pip
-        pip.main(["install","boto3"])
-        import boto3
+	import pip
+	pip.main(["install","boto3"])
+	import boto3
 except Exception as e:
-        print("boto3 not installed: "+str(e))
+	print("boto3 not installed: "+str(e))
 	sys.exit(1)
 
 ACCESS_KEY_ID=""
