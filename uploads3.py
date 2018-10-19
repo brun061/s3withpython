@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+
 try:
         import pip
         pip.main(["install","boto3"])
         import boto3
 except Exception as e:
         print("boto3 not installed: "+str(e))
+	sys.exit(1)
 
- 
 ACCESS_KEY_ID=""
 SECRET_ACCESS_KEY=""
 bucketname="S3 bucket name"   # example: "sqldumps"
